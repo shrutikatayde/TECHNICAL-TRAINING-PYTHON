@@ -16,8 +16,8 @@ def Zombie(bobEnergy, n_OfZombie, arr_energyOfZombie):
         
     return res
 
-bobEnergy, n_OfZombie=list(map(int,input().split()))
-arr_energyOfZombie=list(map(int,input().split()))
+bobEnergy, n_OfZombie=list(map(int,input("Enter Bob Energy  and Zombies Count : ").split()))
+arr_energyOfZombie=list(map(int,input("Enter Energy of each zombie : ").split()))
 res=Zombie(bobEnergy, n_OfZombie, arr_energyOfZombie)
 print(res)
                            

@@ -1,10 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Aug 23 14:13:11 2023
 
-@author: Lenovo
-"""
 
+# ques. 1
 
 def factorial(n):
     # mCp--> combination logic
