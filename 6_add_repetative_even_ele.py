@@ -1,5 +1,5 @@
-# if there are consecutive same charecter are in the string
-# but even number of charecter should be present inside this such substring
+# if there are consecutive same character are in the string
+# but even number of character should be present inside this such substring
 # we have to add the frequency of that element
 
 # Input : aaabbbaaddcde
