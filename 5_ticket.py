@@ -10,7 +10,7 @@ i = 0
 while i < len(ticket):
     if ticket[i] == "G":
         i += 1
-    elif ticket[i] == "E" and i + 1 < len(ticket) and ticket[i + 1] == "F":
+    elif ticket[i] == "E" and ticket[i + 1] == "F":
         i += 2
     else:
         res += ticket[i]
@@ -25,9 +25,3 @@ print(res)
 # str1 = str1.replace("G", '')
 # str1 = str1.replace('EF', '')
 # print(str1)
-
-
-
-
-
-

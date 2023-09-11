@@ -5,7 +5,6 @@
 # Input : aaabbbaaddcde
 # Output : 4
 
-
 str1 = input("Enter the string : ")
 pre = str1[0]
 count = 1
@@ -25,11 +24,4 @@ for i in range(1, len(str1)):
 if count % 2 == 0:
     sm += count
 
-
 print(sm)
-
-
-
-
-
-

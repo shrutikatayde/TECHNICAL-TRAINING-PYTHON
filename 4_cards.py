@@ -5,13 +5,16 @@
 # Input : 23890120
 # Output : 10022389
 
-n = input()
+n = input("Enter the string : ")
+
 a = []
+
 for i in range(len(n)):
     a.append(int(n[i]))
+
+
 a.sort()
 start = 0
-
 
 # increment the value of start if the 1st element is 0
 while start < len(a) and a[start] == 0:
