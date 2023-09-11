@@ -12,6 +12,7 @@ for i in range(len(n)):
 a.sort()
 start =0
 
+
 # increment the value of start if the 1st element is 0
 while start < len(a) and a[start] == 0:
     start += 1
