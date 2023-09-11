@@ -5,6 +5,7 @@
 # Input : aaabbbaaddcde
 # Output : 4
 
+
 str1 = input("Enter the string : ")
 pre = str1[0]
 count = 1
