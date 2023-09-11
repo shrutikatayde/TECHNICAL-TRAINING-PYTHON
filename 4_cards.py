@@ -10,7 +10,6 @@ a = []
 for i in range(len(n)):
     a.append(int(n[i]))
 a.sort()
-ct =0
 start =0
 
 # increment the value of start if the 1st element is 0
