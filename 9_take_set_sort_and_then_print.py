@@ -8,6 +8,7 @@
 # arr2 = set(sarr)
 # print(arr2)
 
+
 str1 = input()
 str2 = input()
 for i in range(len(str2)):
