@@ -1,4 +1,5 @@
 def series(N, a, b, c, d):
+
     arr_for_b = []
     arr_for_d = []
 
