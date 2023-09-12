@@ -22,6 +22,7 @@ def time_in_h_m(h, m):
 
 
 if __name__ == "__main__":
-    h, m = map(int, input("Enter hour and minute: ").split())
+    h = int(input())
+    m = int(input())
     res = time_in_h_m(h, m)
     print(res)
