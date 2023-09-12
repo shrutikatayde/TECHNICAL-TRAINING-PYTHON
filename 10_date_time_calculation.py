@@ -20,9 +20,21 @@ def time_in_h_m(h, m):
 
     return f"{h_upd} :: {m_upd}"
 
+    #     ANOTHER APPROACH
+
+    # if h > 24:
+    #     h = h - 24
+    #     print("-", h, "::", m)
+    # else:
+    #     h = 24 - h
+    #     if m != 0:
+    #         m = 60 - m
+    #         h -= 1
+    #     print(h, "::", m)
+
 
 if __name__ == "__main__":
     h = int(input())
     m = int(input())
     res = time_in_h_m(h, m)
-    print(res)
+    # print(res)
