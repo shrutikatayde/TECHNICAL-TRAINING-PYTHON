@@ -1,3 +1,6 @@
+# Q. 10
+
+
 def is_transaction(arr, n_of_customer):
     # Shopkeeper wallet
     collect_thirty = 0

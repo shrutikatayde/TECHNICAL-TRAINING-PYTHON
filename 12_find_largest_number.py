@@ -1,3 +1,5 @@
+# Q 27.
+
 arr = list(input("Enter the array:"))
 arr.sort()
 a = arr[::-1]
