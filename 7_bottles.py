@@ -2,17 +2,20 @@
 #         r1 = 8
 #         r2 = 10
 #         r1 = 8
-
 # Output :
 
 
 def cal(n, r1, r2, r3):
     plastic_b_count = n // r1  # check how many plastic bottles we can buy
-    totalBottles = 0
+    mx = -6416
+    if plastic_b_count == 0:
+        plastic_b_count += 1
 
-    for i in range(plastic_b_count + 1):
+    for i in range(plastic_b_count):
+        totalBottles = i
         remaining = n - (i * r1)
-        glass_b_count = remaining // 2  # check how many glass bottles we can buy
+        glass_b_count = remaining // r2  # check how many glass bottles we can buy
+        totalBottles += glass_b_count
         remaining = (
             remaining % r2
         )  # here remaining amount after if we buy glass bottles
@@ -25,14 +28,16 @@ def cal(n, r1, r2, r3):
             if remaining < r1 and remaining < r2:
                 return (
                     i + glass_b_count
-                )  # return if we have less amount --> total bottles --> where i is plastic
-                # bottles
+                )  # return if we have less amount-> total bottles-> where i is plastic bottles
 
-            totalBottles = max(totalBottles, cal(remaining, r1, r2, r3))
+            totalBottles += cal(remaining, r1, r2, r3)
 
-            return totalBottles
+        if totalBottles > mx:
+            mx = totalBottles
 
-        return i  # if we buy only plastic bottles
+    return mx
+
+    # return i  # if we buy only plastic bottles
 
 
 n = int(input("Enter total amount : "))

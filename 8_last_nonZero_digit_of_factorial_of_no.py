@@ -1,3 +1,6 @@
+#   Q19
+
+
 def fact(n):
     fact = 1
     arr = []
@@ -5,6 +8,7 @@ def fact(n):
         fact *= i
     fact = str(fact)
     print(fact)
+
     for i in range(len(fact)):
         arr.append(fact[i])
 

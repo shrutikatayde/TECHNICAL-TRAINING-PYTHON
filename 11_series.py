@@ -1,3 +1,4 @@
+# Q15
 def series(N, a, b, c, d):
 
     arr_for_b = []
@@ -9,8 +10,8 @@ def series(N, a, b, c, d):
         arr_for_d.append(d + i * c)
 
     # Compare the elements in the series
-    for i in range(N):
-        for j in range(N):
+    for i in range(N - 1):
+        for j in range(N - 1):
             if arr_for_b[i] == arr_for_d[j]:
                 return arr_for_b[i]
 
