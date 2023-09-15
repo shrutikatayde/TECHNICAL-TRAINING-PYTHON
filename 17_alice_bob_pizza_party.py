@@ -19,6 +19,5 @@ for i in range(N):
                 if mx < ln:
                     mx = ln
                 break
-
     # print(pizza_bob_can_eat)
 print(mx)
